@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  body,
+  html {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .nudes {
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    display:none;
+    background-color:rgba(255, 209, 105, 1);
+    position:fixed;
+    
+  }
+</style>
+
+<body>
+  <h1>Alan Correa Pacheco</h1>
+
+  <button onclick="videos()">Videos</button>
+<div class="nudes" id="nudes">
+  <h1>Hot Videos</h1>
+  <video src=""></video>
+</div>
+  <script>
+    var video = document.getElementById('nudes');
+    var display = 0
+
+    function videos() {
+      if (display == 1) {
+        video.style.display = 'block';
+        display = 0;
+      }
+      else {
+        video.style.display = 'none';
+        display = 1;
+      }
+
+    }
+  </script>
+</body>
+
+</html>
