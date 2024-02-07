@@ -11,10 +11,21 @@
   <title>PRIVATE ARCHIVES</title>
 </head>
 <style>
+body {
+    background-color: white; /* Cor de fundo padrão */
+    color: black; /* Cor do texto padrão */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body, html, .nudes .alejandro {
+      background-color: black; /* Cor de fundo para o tema escuro */
+      color: white; /* Cor do texto para o tema escuro */
+    }
+  }
   body,
+  
   html {
     text-align: center;
-    background-color: rgba(26, 26, 26, 1)
   }
 
   p {
@@ -26,13 +37,13 @@
     color:rgba(255, 212, 0, 1);
     font-family: 'Times New Roman', Times, serif;
   }
-  .nudes {
+  .nudes, .alejandro {
     top:0;
     right:0;
     left:0;
     bottom:0;
     display:none;
-    background-color:rgba(84, 84, 84, 1);
+    background-color: black;
     position:fixed;
     height: auto;
     overflow:auto;
@@ -41,7 +52,18 @@
     padding:10px;
     color:rgba(255, 212, 0, 1);
     border-radius: 15px;
+    background-color: rgba(43, 43, 43, 1);
+  box-shadow: 3px 5px 5px #FFF93D;
+  border: 0;  
+  }
+  button:hover {
+    padding:10px;
+    color:rgba(80, 255, 143, 1);
+    border-radius: 15px;
     background-color:rgba(133, 133, 133, 1);
+  box-shadow: 3px 5px 5px #50FF6F;
+  border: 0;
+    
   }
   video {
     border: 1px solid red;
@@ -53,9 +75,11 @@
 <body>
   <h1>PRIVATE FILES</h1>
 
-  <button onclick="videos()">Videos</button>
+  <button onclick="videos()"><img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707246801/Screenshot_20240206-160715_acbbgg.jpg"  width="350px" height="350px" alt="https://res.cloudinary.com/djkla1m25/image/upload/v1707246801/Screenshot_20240206-160715_acbbgg.jpg"></button> <br><br>
+  <button onclick="belmont()"><img src="https://res.cloudinary.com/djkla1m25/image/upload/v1707247350/20240206_162051_xcxjv8.jpg" width="350px" height="350px"alt="https://res.cloudinary.com/djkla1m25/image/upload/v1707247033/Screenshot_20240205-013251_Samsung_Internet_mqosfz.jpg"></button>
 <div class="nudes" id="nudes">
-  <h1 style="color:#ff0000;">HOT VIDEOS</h1>
+   <button style="float:right; margin:15px;" onclick="videos()">VOLTAR</button>
+  <h1 style="color:#ff0000;">ALAN CORREA PACHECO </h1>
   <video controls <source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707243546/VID-20240206-WA0013_dswkzm.mp4" ></video>
   <br><br>
   <video controls> <source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707243547/VID-20240206-WA0017_pkldar.mp4"></video>
@@ -77,6 +101,18 @@
    <video controls><source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707243573/VID-20240206-WA0023_ibkcs0.mp4"></video>
    <br><br>
 </div>
+<div class="alejandro" id="alejandro">
+   <button style="float:right; margin:15px;" onclick="belmont()">VOLTAR</button>
+  <h1 style="color:#ff0000;">ALEJANDRO BELMONT RODRIGUEZ</h1>
+  <video controls><source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707248436/Big_Dick_Alejandro_Belmont_Rodriguez_Compilation_Video_-_BoyFriendTVcom_aibjer.mp4"></video>
+  <video controls><source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707248869/Alejandro_Belmont_Cumpilation_-_BoyFriendTVcom_001_ytp2eg.mp4"></video>
+  <video controls><source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707251270/Alejandro_Belmont_Cumpilation_-_BoyFriendTVcom_002_z8qbaz.mp4"></video>
+  
+  <video controls><source src="https://res.cloudinary.com/djkla1m25/video/upload/v1707261722/InShot_20240206_201659878_eayp2g.mp4"></video>
+ <video controls><source src=""></video>
+  <video controls><source src=""></video>
+   <video controls><source src=""></video>
+</div>
   <script>
     var video = document.getElementById('nudes');
     var display = 0
@@ -88,6 +124,20 @@
       }
       else {
         video.style.display = 'none';
+        display = 1;
+      }
+
+    }
+    var video2 = document.getElementById('alejandro');
+    var display = 0
+
+    function belmont() {
+      if (display == 1) {
+        video2.style.display = 'block';
+        display = 0;
+      }
+      else {
+        video2.style.display = 'none';
         display = 1;
       }
 
