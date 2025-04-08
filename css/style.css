@@ -1,0 +1,218 @@
+  @font-face {
+  font-family: OCRA;
+  src: url('https://www.big-loser.site/Caso/OCRA Alt.otf') format('woff2');
+  font-display: swap
+}
+
+  * {
+    box-sizing: border-box;
+    font-family: 'OCRA', monospace;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    background: #62838F;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 7%;
+    font-family: 'OCRA', monospace;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
+  footer {
+    bottom: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px;
+    position: absolute;
+  }
+  
+  section {
+    margin-top: 50px;
+    background: #222B4F;
+    margin-left: 14%;
+    padding: 12px;
+    border-radius: 0 0 15px 15px;
+    margin-right: 14%;
+  }
+  
+  section h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  fieldset {
+    border-right: none;
+    border-left: 2px solid #EADFD0;
+    border-top: 2px solid #EADFD0;
+    border-bottom: 2px solid #EADFD0;
+    border-radius: 0 0 0 15px;
+  }
+  
+  legend {
+    text-align: left;
+    color: #AADEF3;
+  }
+  
+  fieldset p {
+    color: #EADFD0;
+    font-size: 15px;
+  }
+  
+  fieldset p:hover {
+    color: #93E3DC;
+  }
+  
+  .fotos_gabriel,
+  .fotos_camila,
+  .videos_Gabriel,
+  .videos_camila {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    background: #62838F;
+    display: none;
+    padding-bottom: 14%;
+  }
+  
+  div.videos_gabriel h2 {
+    margin-left: 7%;
+    display: flex;
+    width: 20%;
+    color: #fffffb;
+    text-shadow: 1px 0 0 #000;
+  }
+  
+  div.videos_Gabriel h2 {
+    margin-left: 7%;
+    color: #FFFFFB;
+    font-weight: 800;
+  }
+  
+  div.videos_Gabriel fieldset {
+    background: #4F6666;
+    margin-top: 15px;
+  }
+  
+  div.videos_Gabriel fieldset legend {
+    background: #ECE3DA;
+    color: #617F5D;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .div__gabriel,
+  .camila_div,
+  .vdcamilab,
+  .videos_gabriel {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    background: #CDDCDF;
+    padding-top: 14%;
+    display: none;
+    padding-bottom: 14%;
+  }
+  
+  form {
+    background: #B9CCD0;
+    padding: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    color: #FFFFFB;
+    text-shadow: 1px 0 0 #000;
+    font-weight: 800;
+  }
+  
+  form input {
+    padding: 10px;
+    border-radius: 10px;
+    color: #84A48C;
+    font-size: 14px;
+    font-family: 'sans-serif', monospace;
+    border: none;
+    font-weight: 800;
+    text-transform: initial;
+    background: #2C2C2C;
+  }
+  
+  form input:focus {
+    outline: none;
+    border: none;
+  }
+  
+  div.fotos_gabriel img {
+    display: inline-table;
+    width: 125px;
+    border: 2px solid #C6D8D8;
+    height: 125px;
+  }
+  
+  video {
+    display: inline-table;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #C6D8D8;
+  }
+  
+  div.fotos_gabriel p {
+    margin-left: 7%;
+  }
+  
+  div.fotos_gabriel h2 {
+    margin-left: 7%;
+    color: #FFFFFB;
+    font-weight: 800;
+    text-shadow: 1px 0 0 #000;
+  }
+  
+  div.fotos_gabriel fieldset {
+    background: #4F6666;
+    margin-top: 15px;
+  }
+  
+  div.fotos_gabriel fieldset legend {
+    background: #ECE3DA;
+    color: #617F5D;
+    text-shadow: 1px 0 0 #000;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  div.photos,
+  div.videos {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
