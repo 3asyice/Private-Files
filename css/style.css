@@ -114,7 +114,7 @@
   
   div.videos_Gabriel fieldset legend {
     background: #ECE3DA;
-    color: #617F5D;
+    color: #121212;
     font-weight: 800;
     font-size: 14px;
     border-radius: 0 0 15px 15px;
@@ -181,8 +181,8 @@
   
   video {
     display: inline-table;
-    width: 125px;
-    height: 125px;
+    width: 155px;
+    height: 155px;
     border: 1px solid #C6D8D8;
   }
   
@@ -204,7 +204,7 @@
   
   div.fotos_gabriel fieldset legend {
     background: #ECE3DA;
-    color: #617F5D;
+    color: #121212;
     text-shadow: 1px 0 0 #000;
     font-weight: 800;
     font-size: 14px;
