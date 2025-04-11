@@ -28,11 +28,93 @@
     </section>
     <section>
       <fieldset>
+        <legend>Cássia Taísa</legend>
+        <p onclick="cassiaPhotos()">▶ Images</p>
+        <p onclick="()">▶ Videos</p>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
         <legend>José Gabriel</legend>
         <p onclick="fotosGabriel()">▶ Images</p>
         <p onclick="videosGabriel()">▶ Videos</p>
       </fieldset>
     </section>
+    <!-- Cassia PhotosAuth-->
+    
+    <div class="cassia_photos_auth" id="cassia_photos_auth">
+      
+      <h2>Autenticação: Fotos</h2>
+      
+      <form onsubmit="event.preventDefault(); cassiaSubmit()">
+        <label for="user">Usuário:</label>
+        <input type="text" name="user" id="name" placeholder="Primeiro nome..." required />
+        <label for="birth">Data de Nascimento:</label>
+        <input type="date" name="birth" id="niver" required />
+        <input type="submit">
+      </form>
+    </div>
+    
+    <div class="fotos_gabriel" id="ksete">
+      <img onclick="goBack()" style="border:none;" width="150" height="150" src="./img/rememberme.png" alt="rememberme" />
+      <h2>Fotos de Cássia Taísa</h2>
+      
+      <fieldset>
+        <legend>Seg., 23 de Out. de 2023</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia05.jpg" alt="cassia" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Qua., 27 de Out. de 2021</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia04.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia03.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia02.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia01.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia00.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaF.jpg" alt="cassia" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Seg., 16 de Ago. de 2021</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaE.jpg" alt="cassia" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Seg., 28 de Jun. de 2021</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaD.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaC.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaB.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassiaA.jpg" alt="cassia" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dom., 18 de Abr. de 2021</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia9.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia8.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia7.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia6.jpg" alt="cassia" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Qui., 02 de Abr. de 2020</legend>
+        <div class="photos">
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia5.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia4.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia3.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia2.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia1.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia0.jpg" alt="cassia" />
+          <img onclick="openFullscreen(this)" src="./img/cassia/cassia.jpg" alt="cassia" />
+          
+        </div>
+      </fieldset>
+    </div>
+    <!-- Cassia PhotosAuth End-->
     
     <div class="camila_div" id="camila_id">
       <h2>Camila Videos Auth:</h2>
