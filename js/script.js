@@ -96,6 +96,38 @@ function camila_fotosAuth() {
   }
 }
 
+// Cássia começo
+
+var phAc = document.getElementById('cassia_photos_auth');
+var fKit = false;
+
+function cassiaPhotos() {
+  fKit = !fKit;
+  phAc.style.display = fKit ? 'block' : 'none';
+  var prgRa = footer_Auth.getElementsByTagName('p')[0];
+prgRa.style.display = 'none';
+}
+
+var fotosCassia = document.getElementById('ksete');
+
+function cassiaSubmit() {
+  var user = document.getElementById('name').value;
+  var date = document.getElementById('niver').value;
+  
+  if (user === 'Cássia' && date === '1995-05-26') {
+    fotosCassia.style.display = 'block';
+  } else {
+    alert("acesso negado");
+    phAc.style.display = 'none';
+  }
+}
+// Cassia End Auth Fotos
+// start Cassia Auth Videos 
+
+
+
+
+//end Cassia Auth Videos
 
 
 
@@ -103,6 +135,8 @@ function goBack() {
   // Seleciona todos os vídeos na página
   const videos = document.getElementsByTagName('video');
   // Oculta elementos, se eles estiverem definidos
+  if (fotosCassia) fotosCassia.style.display = 'none';
+  if (phAc) phAc.style.display = 'none';
   if (allvideos_camila) allvideos_camila.style.display = 'none';
   if (camVds) camVds.style.display = 'none';
   if (fotosgabriel) fotosgabriel.style.display = 'none';
