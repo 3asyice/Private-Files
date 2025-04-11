@@ -38,7 +38,7 @@
     font-weight: 400;
     font-size: 14px;
     padding: 20px;
-    position: absolute;
+    position: relative;
   }
   
   section {
@@ -79,6 +79,7 @@
   }
   
   .fotos_gabriel,
+  .ksete,
   .fotos_camila,
   .videos_Gabriel,
   .videos_camila {
@@ -123,6 +124,7 @@
   .div__gabriel,
   .camila_div,
   .vdcamilab,
+  .cassia_photos_auth,
   .videos_gabriel {
     top: 0;
     right: 0;
@@ -177,6 +179,9 @@
     width: 125px;
     border: 2px solid #C6D8D8;
     height: 125px;
+  }
+  div.cassia_photos_auth h2{
+    margin-left: 7%;
   }
   
   video {
