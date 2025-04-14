@@ -1,12 +1,12 @@
   @font-face {
-  font-family: OCRA;
-  src: url('https://www.big-loser.site/Caso/OCRA Alt.otf') format('woff2');
-  font-display: swap
-}
-
+    font-family: OCRA;
+    src: url('https://www.big-loser.site/Caso/OCRA Alt.otf') format('woff2');
+    font-display: swap
+  }
+  
   * {
     box-sizing: border-box;
-    font-family: 'OCRA', monospace;
+    font-family: 'serif', monospace;
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
@@ -21,11 +21,12 @@
   }
   
   header h1 {
-    color: #fff;
+    color: #6A92D7;
     font-size: 14px;
     text-transform: uppercase;
     text-align: left;
     margin-left: 7%;
+    text-shadow: 1px 0 0 #DF245B;
     font-family: 'OCRA', monospace;
     font-style: normal;
     font-weight: 800;
@@ -125,6 +126,7 @@
   .camila_div,
   .vdcamilab,
   .cassia_photos_auth,
+  .cassia_videos_auth,
   .videos_gabriel {
     top: 0;
     right: 0;
@@ -136,6 +138,10 @@
     padding-top: 14%;
     display: none;
     padding-bottom: 14%;
+  }
+  
+  div.camila_div h2 {
+    margin-left: 7%;
   }
   
   form {
@@ -180,7 +186,8 @@
     border: 2px solid #C6D8D8;
     height: 125px;
   }
-  div.cassia_photos_auth h2{
+  
+  div.cassia_photos_auth h2 {
     margin-left: 7%;
   }
   
