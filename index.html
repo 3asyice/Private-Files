@@ -2,17 +2,21 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Remember Me é um Projeto para manter as lembranças de uma família.">
-  <meta name="author" content="Anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
-  
+  <!-- Página Básica Precisa -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!-- Título é cerca de 20 porvento dos resultados, o elemento mais importante. Inclui as palavras chaves (keywords) para promover o contexto. -->
   <title>PROJECT: REMEMBER ME</title>
+  <!-- Descrição é o próximo elemento mais importante com cerca de 15 porcento de busca, também incluí palavras chaves. Mostrado abaixo do título às vezes. -->
+  <meta name="description" content="Remember Me é um Projeto para manter as lembranças de uma família.">
+  <meta name="author" content="SD 609">
+  <!-- Especificas Metas para Celulares =================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+<!-- Favicons ========== -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="icon" href="https://www.big-loser.site/M/Apr/icon.jpg"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <header>
     <img width="150" height="150" src="./img/rememberme.png" alt="rememberme" />
@@ -30,7 +34,7 @@
       <fieldset>
         <legend>Cássia Taísa</legend>
         <p onclick="cassiaPhotos()">▶ Images</p>
-        <p onclick="()">▶ Videos</p>
+        <p onclick="cassiaVideos()">▶ Videos</p>
       </fieldset>
     </section>
     <section>
@@ -40,11 +44,61 @@
         <p onclick="videosGabriel()">▶ Videos</p>
       </fieldset>
     </section>
+    <!-- Cássia Videos auth =================================== -->
+    
+    <div class="cassia_videos_auth" id="cassia_videos_auth">
+      
+      <h2>Autenticação: Videos</h2>
+      
+      <form onsubmit="event.preventDefault(); cassiaVideossubmit()">
+        <label for="user">Usuário:</label>
+        <input type="text" name="user" id="one_name" placeholder="Primeiro nome..." required />
+        <label for="birth">Data de Nascimento:</label>
+        <input type="date" name="birth" id="one_niver" required />
+        <input type="submit">
+      </form>
+    </div>
+    
+    <div class="fotos_gabriel" id="videos_of_cassia">
+      <img onclick="goBack()" style="border:none;" width="150" height="150" src="./img/rememberme.png" alt="rememberme" />
+      
+      <h2>Vídeos de Cássia Taísa</h2>
+      <fieldset>
+        <legend>Sáb., 11 de Jun. de 2022</legend>
+        <div class="videos">
+          <video allowfullscreen poster="./img/cassia/cassiaE.jpg" controls>
+            <source src="./video/cassia_videos/cassia.mp4" type="video/mp4" media="all" />
+        </div>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Qui., 02 Abr. de 2020</legend>
+        <div class="videos">
+          <video allowfullscreen poster="./img/cassia/cassiaE.jpg" controls>
+            <source src="./video/camila_videos/camila.mp4" type="video/mp4" media="all" />
+        </div>
+      </fieldset>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Videos Auth End ============================= -->
+    
     <!-- Cassia PhotosAuth-->
     
     <div class="cassia_photos_auth" id="cassia_photos_auth">
       
-      <h2>Autenticação: Fotos</h2>
+      <h2>AUTENTICAÇÃO: Fotos</h2>
       
       <form onsubmit="event.preventDefault(); cassiaSubmit()">
         <label for="user">Usuário:</label>
