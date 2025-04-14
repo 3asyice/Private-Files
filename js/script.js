@@ -96,7 +96,7 @@ function camila_fotosAuth() {
   }
 }
 
-// Cássia começo
+// Cássia começo =================================
 
 var phAc = document.getElementById('cassia_photos_auth');
 var fKit = false;
@@ -105,7 +105,7 @@ function cassiaPhotos() {
   fKit = !fKit;
   phAc.style.display = fKit ? 'block' : 'none';
   var prgRa = footer_Auth.getElementsByTagName('p')[0];
-prgRa.style.display = 'none';
+  prgRa.style.display = 'none';
 }
 
 var fotosCassia = document.getElementById('ksete');
@@ -122,12 +122,33 @@ function cassiaSubmit() {
   }
 }
 // Cassia End Auth Fotos
-// start Cassia Auth Videos 
+// start Cassia Auth Videos ==================== 
+var vd_cassia = document.getElementById('cassia_videos_auth');
+var vd_false = false;
 
+function cassiaVideos() {
+  vd_false = !vd_false;
+  vd_cassia.style.display = vd_false ? 'block' : 'none';
+  var paragraph = footer_Auth.getElementsByTagName('p')[0];
+  paragraph.style.display = 'none';
+}
 
+var videosCassia = document.getElementById('videos_of_cassia');
 
+function cassiaVideossubmit() {
+  var one_user = document.getElementById('one_name').value;
+  var date_one = document.getElementById('one_niver').value;
+  if (one_user === 'Cássia' && date_one === '1995-05-26')
+  {
+    videosCassia.style.display = 'block';
+  }
+  else {
+    alert('Acesso Negado');
+    vd_cassia.style.display = 'none';
+  }
+}
 
-//end Cassia Auth Videos
+//end Cassia Auth Videos ===================================
 
 
 
@@ -135,6 +156,8 @@ function goBack() {
   // Seleciona todos os vídeos na página
   const videos = document.getElementsByTagName('video');
   // Oculta elementos, se eles estiverem definidos
+  if (vd_cassia) vd_cassia.style.display = 'none';
+  if (videosCassia) videosCassia.style.display = 'none';
   if (fotosCassia) fotosCassia.style.display = 'none';
   if (phAc) phAc.style.display = 'none';
   if (allvideos_camila) allvideos_camila.style.display = 'none';
